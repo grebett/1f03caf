@@ -4,6 +4,29 @@ __todo: add tpl doc links when manu ok__
 
 From online shoe stores to indie music platforms, any company selling products online will have to send a receipt. In this tutorial, we're going to show you how to code an e-receipt email template step by step using MJML and Mailjet's templating language.
 
+
+__Table of Contents__
+
+<ul>
+  <li><a href="#prerequisites">Prerequisites</a></li>
+  <li>
+    <a href="#what-will-you-achieve">What will you achieve</a>
+    <ul>
+      <li><a href="#starting-with-a-simple-header">Starting with a simple header</a></li>
+      <li><a href="#be-polite-say-hi">Be polite. Say hi.</a></li>
+      <li><a href="#where-should-we-deliver">Where should we deliver?</a></li>
+      <li><a href="#looping-over-items-data">Looping over items data</a></li>
+      <li><a href="#ok-but-your-loop-does-nothing">OK, but your loop does nothing...</a></li>
+      <li><a href="#wow-this-is-quite-expensive">Wow, this is quite expensive!</a></li>
+      <li><a href="#i-bet-you-want-to-buy-more-things">I bet you want to buy more things!</a></li>
+      <li><a href="#because-we-kept-the-better-at-the-end">Because we kept the better at the end</a></li>
+    </ul>
+  </li>
+  <li><a href="#time-to-code">Time to code!</a></li>
+  <li><a href="#conclusion">Conclusion</a></li>
+</ul>
+
+
 ## Prerequisites
 
 Obviously, you should have a [Mailjet](https://www.mailjet.com/) account. If you're not a client yet, you can [subscribe for a free account](https://app.mailjet.com/signup) (and send immediately up to 6000 free emails a month!). __Warning:__ don't use a disposable email address (gmail, yahoo, etc included), as you'll be likely to be blocked by our anti-spammer policy.
@@ -11,6 +34,7 @@ Obviously, you should have a [Mailjet](https://www.mailjet.com/) account. If you
 Some basic knowledge about [MJML](https://mjml.io/) is a plus, but isn't mandatory. If you prefer to code your email in HTML, we provide you with a ready-to-use `index.html` file that you can find at the root of this repository.
 
 If you're a [MJML API](https://mjml.io/api) user (if not, join us, it's currently in [open beta](https://mjml.io/api)), you'll also be able to use our email sender tool we built especially for this tutorial. Go check the tool's [README](#) for more informations.
+
 
 ## What will you achieve
 
@@ -30,7 +54,9 @@ Their designer, who has hosted all the assets online, has just sent you the fina
 
 Are you ready to start? Let's go!
 
+
 ## Time to code!
+
 
 ### Starting with a simple header
 
@@ -53,6 +79,7 @@ Don't forget the `alt` attribute, used if [your images aren't displayed by the e
   </mj-column>
 </mj-section>
 ```
+
 
 ### Be polite. Say hi.
 
@@ -80,6 +107,7 @@ Let's put this placeholder along to the rest of your text in a `<mj-text>` tag, 
   </mj-column>
 </mj-section>
 ```
+
 
 ### Where should we deliver?
 
@@ -127,6 +155,7 @@ The latter uses two columns. If you don't provide a specific width, they adopt t
   </mj-column>
 </mj-section>
 ```
+
 
 ### Looping over items data
 
@@ -193,6 +222,7 @@ Note that, to use templating language `for` loops with MJML, __you have to wrap 
 </mj-raw>
 ```
 
+
 ### OK, but your loop does nothing...
 
 Indeed, before you can boast of being the king of the loops in email, you should at least display some content! Here's what should look like a single item.
@@ -247,6 +277,7 @@ Now that you have implemented a single item, let's see what is the result when t
 
 Pretty neat, isn't it?
 
+
 ### Wow, this is quite expensive!
 
 The bill please! You have to implement a detailed total price with shipping, taxes and total amount values. Problem, you have been provided only with two of these values and the taxes amount is missing.
@@ -282,6 +313,7 @@ Very convenient, isn't it? And of course, because you don't want to display more
   </mj-column>
 </mj-section>
 ```
+
 
 ### I bet you want to buy more things!
 
@@ -328,6 +360,7 @@ Note that this time, the `<mj-raw>` is wrapping the column. That's a good idea f
 </mj-section>
 ```
 
+
 ### Because we kept the better at the end
 
 Let's finish by a simple footer.
@@ -355,6 +388,7 @@ The trick here is that you want to prevent the columns from stacking on mobile. 
   </mj-group>
 </mj-section>
 ```
+
 
 ## Conclusion
 
