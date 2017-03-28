@@ -5,7 +5,7 @@ __todo: add tpl doc links when manu ok__
 From online shoe stores to indie music platforms, any company selling products online will have to send a receipt. In this tutorial, we're going to show you how to code an e-receipt email template step by step using MJML and Mailjet's templating language.
 
 
-__Table of Contents__
+## Table of Contents
 
 <ul>
   <li><a href="#prerequisites">Prerequisites</a></li>
@@ -35,6 +35,7 @@ Some basic knowledge about [MJML](https://mjml.io/) is a plus, but isn't mandato
 
 If you're a [MJML API](https://mjml.io/api) user (if not, join us, it's currently in [open beta](https://mjml.io/api)), you'll also be able to use our email sender tool we built especially for this tutorial. Go check the tool's [README](#) for more informations.
 
+<a href="#table-of-contents">🔝</a>
 
 ## What will you achieve
 
@@ -54,9 +55,9 @@ Their designer, who has hosted all the assets online, has just sent you the fina
 
 Are you ready to start? Let's go!
 
+<a href="#table-of-contents">🔝</a>
 
 ## Time to code!
-
 
 ### Starting with a simple header
 
@@ -80,6 +81,7 @@ Don't forget the `alt` attribute, used if [your images aren't displayed by the e
 </mj-section>
 ```
 
+<a href="#table-of-contents">🔝</a>
 
 ### Be polite. Say hi.
 
@@ -108,6 +110,7 @@ Let's put this placeholder along to the rest of your text in a `<mj-text>` tag, 
 </mj-section>
 ```
 
+<a href="#table-of-contents">🔝</a>
 
 ### Where should we deliver?
 
@@ -156,6 +159,7 @@ The latter uses two columns. If you don't provide a specific width, they adopt t
 </mj-section>
 ```
 
+<a href="#table-of-contents">🔝</a>
 
 ### Looping over items data
 
@@ -222,6 +226,7 @@ Note that, to use templating language `for` loops with MJML, __you have to wrap 
 </mj-raw>
 ```
 
+<a href="#table-of-contents">🔝</a>
 
 ### OK, but your loop does nothing...
 
@@ -277,6 +282,7 @@ Now that you have implemented a single item, let's see what is the result when t
 
 Pretty neat, isn't it?
 
+<a href="#table-of-contents">🔝</a>
 
 ### Wow, this is quite expensive!
 
@@ -314,6 +320,7 @@ Very convenient, isn't it? And of course, because you don't want to display more
 </mj-section>
 ```
 
+<a href="#table-of-contents">🔝</a>
 
 ### I bet you want to buy more things!
 
@@ -360,6 +367,7 @@ Note that this time, the `<mj-raw>` is wrapping the column. That's a good idea f
 </mj-section>
 ```
 
+<a href="#table-of-contents">🔝</a>
 
 ### Because we kept the better at the end
 
@@ -389,6 +397,7 @@ The trick here is that you want to prevent the columns from stacking on mobile. 
 </mj-section>
 ```
 
+<a href="#table-of-contents">🔝</a>
 
 ## Conclusion
 
@@ -400,3 +409,5 @@ More an email veteran? How does it feel compared to your usual coding flow?
 We'll love to have your feedback about this first tutorial, so ping us on [Twitter](https://twitter.com/mailjetdev) or come and chat on the [MJML slack channel](https://slack.mjml.io/)!
 
 You want to be informed about other tutorials and nice tech articles? Subcribe to our [dev only newsletter](https://dev.mailjet.com/community/#newsletter) to stay tuned!
+
+<a href="#table-of-contents">🔝</a>
