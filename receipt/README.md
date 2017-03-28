@@ -1,4 +1,4 @@
-# How to send an e-receipt email
+# How to create an e-receipt email template
 
 __todo: add tpl doc links when manu ok__
 
