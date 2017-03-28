@@ -4,7 +4,6 @@ __todo: add tpl doc links when manu ok__
 
 From online shoe stores to indie music platforms, any company selling products online will have to send a receipt. In this tutorial, we're going to show you how to code an e-receipt email template step by step using MJML and Mailjet's templating language.
 
-
 ## Table of Contents
 
 <ul>
@@ -26,7 +25,6 @@ From online shoe stores to indie music platforms, any company selling products o
   <li><a href="#conclusion">Conclusion</a></li>
 </ul>
 
-
 ## Prerequisites
 
 Obviously, you should have a [Mailjet](https://www.mailjet.com/) account. If you're not a client yet, you can [subscribe for a free account](https://app.mailjet.com/signup) (and send immediately up to 6000 free emails a month!). __Warning:__ don't use a disposable email address (gmail, yahoo, etc included), as you'll be likely to be blocked by our anti-spammer policy.
@@ -35,7 +33,11 @@ Some basic knowledge about [MJML](https://mjml.io/) is a plus, but isn't mandato
 
 If you're a [MJML API](https://mjml.io/api) user (if not, join us, it's currently in [open beta](https://mjml.io/api)), you'll also be able to use our email sender tool we built especially for this tutorial. Go check the tool's [README](#) for more informations.
 
+<br />
+
 <a href="#table-of-contents">🔝</a>
+
+<br />
 
 ## What will you achieve
 
@@ -55,7 +57,11 @@ Their designer, who has hosted all the assets online, has just sent you the fina
 
 Are you ready to start? Let's go!
 
+<br />
+
 <a href="#table-of-contents">🔝</a>
+
+<br />
 
 ## Time to code!
 
@@ -71,6 +77,8 @@ Adjust the padding as desired with the `padding-top` attribute.
 
 Don't forget the `alt` attribute, used if [your images aren't displayed by the email clients](https://litmus.com/blog/the-ultimate-guide-to-styled-alt-text-in-email).
 
+<br />
+
 ```XML
 <!-- Logo -->
 <mj-section mj-class="section-white" padding-top="30px">
@@ -81,7 +89,11 @@ Don't forget the `alt` attribute, used if [your images aren't displayed by the e
 </mj-section>
 ```
 
+<br />
+
 <a href="#table-of-contents">🔝</a>
+
+<br />
 
 ### Be polite. Say hi.
 
@@ -97,6 +109,8 @@ Here, you're interested in the `user.name` property, whose value is `Matthew` fo
 
 Let's put this placeholder along to the rest of your text in a `<mj-text>` tag, left aligned by default. Note that you can use plain HTML tags, such as `<br />` and `<a>` inside a `<mj-text>`.
 
+<br />
+
 ```XML
 <!-- Hi and Thanks -->
 <mj-section mj-class="section-white" padding-top="30px">
@@ -110,7 +124,11 @@ Let's put this placeholder along to the rest of your text in a `<mj-text>` tag, 
 </mj-section>
 ```
 
+<br />
+
 <a href="#table-of-contents">🔝</a>
+
+<br />
 
 ### Where should we deliver?
 
@@ -123,6 +141,8 @@ The layout you should use here is divided into two sections.
 The first one contains a single column and a single `<mj-text>` element. It uses a templating language variable to display the order number.
 
 The latter uses two columns. If you don't provide a specific width, they adopt their default behavior and share the available space equally between each other, i.e. 50% of their parent container. Let's look at the templating language variables used here. As you can see, you can dive deeply into a JSON representation to find the value you need and display it along with regular static text.
+
+<br />
 
 ```XML
 <!-- Order number -->
@@ -159,11 +179,17 @@ The latter uses two columns. If you don't provide a specific width, they adopt t
 </mj-section>
 ```
 
+<br />
+
 <a href="#table-of-contents">🔝</a>
+
+<br />
 
 ### Looping over items data
 
 As reproduced below, the mockup data contains an `items` array with three object children. But _clothes-men.com_ customers won't buy a fix amount of items every time! You need a way to iterate over this data safely, and display an items list whatever their number.
+
+<br />
 
 ```JSON
 "items": [
@@ -202,6 +228,8 @@ As reproduced below, the mockup data contains an `items` array with three object
 ]
 ```
 
+<br />
+
 That's when templating language `for` loops come in handy.
 
 Start your `for` loops with a `{% for single_element in array_variable %}` statement.
@@ -213,6 +241,8 @@ Everything in between is then repeated `n` times, where `n` is the length of `ar
 Within the loop, a new variable `single_element` is created and updated for each iteration. You'll learn right after how to access it.
 
 Note that, to use templating language `for` loops with MJML, __you have to wrap your instructions in `<mj-raw>` tags__ so MJML won't try to parse them.
+
+<br />
 
 ```XML
 <mj-raw>
@@ -226,7 +256,11 @@ Note that, to use templating language `for` loops with MJML, __you have to wrap 
 </mj-raw>
 ```
 
+<br />
+
 <a href="#table-of-contents">🔝</a>
+
+<br />
 
 ### OK, but your loop does nothing...
 
@@ -243,6 +277,8 @@ Because you named your child element `item`, you can access the object propertie
 For instance, the `<mj-image>` `src` attribute will be dynamically updated for each iteration with the correct `image_URL` property.
 
 The `item` variable follows the same rules as other templating language variables, so you can add default values and dive deeply into their values (and use another `for` loop if these values are arrays!).
+
+<br />
 
 ```XML
 <mj-section mj-class="section-white" vertical-align="middle">
@@ -276,13 +312,19 @@ The `item` variable follows the same rules as other templating language variable
 </mj-section>
 ```
 
+<br />
+
 Now that you have implemented a single item, let's see what is the result when the `for` loop is executed and the template rendered:
 
 <img src="./screenshots/items.png" />
 
 Pretty neat, isn't it?
 
+<br />
+
 <a href="#table-of-contents">🔝</a>
+
+<br />
 
 ### Wow, this is quite expensive!
 
@@ -297,6 +339,8 @@ You're out of danger! Using templating language arithmetics and built-in functio
 First, to apply the percentage, some very basic math:<br/>*total_amount* __*__ *taxes_percentage* __=>__ 134.97 * 0.0825 __=__ 11.135025.
 
 Very convenient, isn't it? And of course, because you don't want to display more that two figures after the dot, you can use the `Round(n, precision)` function to perfect the display!
+
+<br />
 
 ```XML
 <!-- Delivery date and Total amount -->
@@ -320,7 +364,11 @@ Very convenient, isn't it? And of course, because you don't want to display more
 </mj-section>
 ```
 
+<br />
+
 <a href="#table-of-contents">🔝</a>
+
+<br />
 
 ### I bet you want to buy more things!
 
@@ -329,6 +377,8 @@ Because, let's be fair, _clothes-men.com_ wants to sell them more... They ask yo
 <img src="./screenshots/suggestions.png" />
 
 Note that this time, the `<mj-raw>` is wrapping the column. That's a good idea for a fixed number of columns, but what will happen if we have more? Use your imagination! The solution is behind the scope of this tutorial, but if you want to chat about it, [join the MJML slack](https://slack.mjml.io/) ;)
+
+<br />
 
 ```XML
 <!-- You will love that Divider -->
@@ -367,7 +417,11 @@ Note that this time, the `<mj-raw>` is wrapping the column. That's a good idea f
 </mj-section>
 ```
 
+<br />
+
 <a href="#table-of-contents">🔝</a>
+
+<br />
 
 ### Because we kept the better at the end
 
@@ -376,6 +430,8 @@ Let's finish by a simple footer.
 <img src="./screenshots/footer.png" />
 
 The trick here is that you want to prevent the columns from stacking on mobile. A `<mj-group>` is then the solution. More info in the [official documentation](https://mjml.io/documentation/).
+
+<br />
 
 ```XML
 <mj-section mj-class="section-white" vertical-align="middle" padding-bottom="30px">
@@ -397,7 +453,12 @@ The trick here is that you want to prevent the columns from stacking on mobile. 
 </mj-section>
 ```
 
+<br />
+
 <a href="#table-of-contents">🔝</a>
+
+<br />
+
 
 ## Conclusion
 
@@ -409,5 +470,7 @@ More an email veteran? How does it feel compared to your usual coding flow?
 We'll love to have your feedback about this first tutorial, so ping us on [Twitter](https://twitter.com/mailjetdev) or come and chat on the [MJML slack channel](https://slack.mjml.io/)!
 
 You want to be informed about other tutorials and nice tech articles? Subcribe to our [dev only newsletter](https://dev.mailjet.com/community/#newsletter) to stay tuned!
+
+<br />
 
 <a href="#table-of-contents">🔝</a>
