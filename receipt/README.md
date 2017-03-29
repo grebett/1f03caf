@@ -30,8 +30,11 @@ From online shoe stores to indie music platforms, any company selling products o
 Obviously, you should have a [Mailjet](https://www.mailjet.com/) account. If you're not a client yet, you can [subscribe for a free account](https://app.mailjet.com/signup) (and send immediately up to 6000 free emails a month!). __Warning:__ don't use a disposable email address (gmail, yahoo, etc included), as you'll be likely to be blocked by our anti-spammer policy.
 
 Some basic knowledge about [MJML](https://mjml.io/) is a plus, but isn't mandatory. If you prefer to code your email in HTML, we provide you with a ready-to-use `index.html` file that you can find at the root of this repository.
+You could also play with the code using the <a href="#"><img src="https://mjml.io/favicon.ico"/>&nbsp;Try it live</a> links below the code snippets. 
 
 If you're a [MJML API](https://mjml.io/api) user (if not, join us, it's currently in [open beta](https://mjml.io/api)), you'll also be able to use our email sender tool we built especially for this tutorial. Go check the tool's [README](#) for more informations.
+
+
 
 <br />
 
@@ -88,6 +91,7 @@ Don't forget the `alt` attribute, used if [your images aren't displayed by the e
   </mj-column>
 </mj-section>
 ```
+<a href="https://mjml.io/try-it-live/SkqnJXYnx"><img src="https://mjml.io/favicon.ico"/>&nbsp;Try it live</a>
 
 <br />
 
@@ -123,6 +127,7 @@ Let's put this placeholder along to the rest of your text in a `<mj-text>` tag, 
   </mj-column>
 </mj-section>
 ```
+<a href="https://mjml.io/try-it-live/HkjWWmKhe"><img src="https://mjml.io/favicon.ico"/>&nbsp;Try it live</a>
 
 <br />
 
@@ -178,6 +183,7 @@ The latter uses two columns. If you don't provide a specific width, they adopt t
   </mj-column>
 </mj-section>
 ```
+<a href="https://mjml.io/try-it-live/Skrg-7Y3g"><img src="https://mjml.io/favicon.ico"/>&nbsp;Try it live</a>
 
 <br />
 
@@ -255,6 +261,7 @@ Note that, to use templating language `for` loops with MJML, __you have to wrap 
   {% endfor %}
 </mj-raw>
 ```
+<a href="https://mjml.io/try-it-live/HykGMmY3l"><img src="https://mjml.io/favicon.ico"/>&nbsp;Try it live</a>
 
 <br />
 
@@ -311,6 +318,7 @@ The `item` variable follows the same rules as other templating language variable
   </mj-group>
 </mj-section>
 ```
+<a href="https://mjml.io/try-it-live/HykGMmY3l"><img src="https://mjml.io/favicon.ico"/>&nbsp;Try it live</a>
 
 <br />
 
@@ -363,6 +371,7 @@ Very convenient, isn't it? And of course, because you don't want to display more
   </mj-column>
 </mj-section>
 ```
+<a href="https://mjml.io/try-it-live/rJF-97K2g"><img src="https://mjml.io/favicon.ico"/>&nbsp;Try it live</a>
 
 <br />
 
@@ -416,6 +425,7 @@ Note that this time, the `<mj-raw>` is wrapping the column. That's a good idea f
   </mj-raw>
 </mj-section>
 ```
+<a href="https://mjml.io/try-it-live/H11KfQYhe"><img src="https://mjml.io/favicon.ico"/>&nbsp;Try it live</a>
 
 <br />
 
@@ -447,11 +457,12 @@ The trick here is that you want to prevent the columns from stacking on mobile. 
       </mj-text>
     </mj-column>
     <mj-column width="31%" vertical-align="middle">
-      <mj-image src="http://www.avicennaproject.com/communities/1/004/011/146/631//images/4614803645.gif" width="25px" alt="logo" align="left"/>
+      <mj-image src="https://s24.postimg.org/3m7nc9qad/twitter.png" width="25px" alt="logo" align="left"/>
     </mj-column>
   </mj-group>
 </mj-section>
 ```
+<a href="#"><img src="https://mjml.io/favicon.ico"/>&nbsp;Try it live</a>
 
 <br />
 
