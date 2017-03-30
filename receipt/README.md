@@ -1,6 +1,6 @@
 # How to create an e-receipt email template
 
-__todo: add tpl doc links when manu ok__
+__todo: add tpl doc links when manu ok – Monday__
 
 From online shoe stores to indie music platforms, any company selling products online will have to send a receipt. In this tutorial, we're going to show you how to code an e-receipt email template step by step using MJML and Mailjet's templating language.
 
@@ -9,7 +9,7 @@ From online shoe stores to indie music platforms, any company selling products o
 <ul>
   <li><a href="#prerequisites">Prerequisites</a></li>
   <li>
-    <a href="#what-will-you-achieve">What will you achieve</a>
+    <a href="#what-will-you-achieve">What will you achieve?</a>
     <ul>
       <li><a href="#starting-with-a-simple-header">Starting with a simple header</a></li>
       <li><a href="#be-polite-say-hi">Be polite. Say hi.</a></li>
@@ -18,7 +18,7 @@ From online shoe stores to indie music platforms, any company selling products o
       <li><a href="#ok-but-your-loop-does-nothing">OK, but your loop does nothing...</a></li>
       <li><a href="#wow-this-is-quite-expensive">Wow, this is quite expensive!</a></li>
       <li><a href="#i-bet-you-want-to-buy-more-things">I bet you want to buy more things!</a></li>
-      <li><a href="#because-we-kept-the-better-at-the-end">Because we kept the better at the end</a></li>
+      <li><a href="#because-we-saved-the-best-for-last">Because we saved the best for last</a></li>
     </ul>
   </li>
   <li><a href="#time-to-code">Time to code!</a></li>
@@ -29,12 +29,9 @@ From online shoe stores to indie music platforms, any company selling products o
 
 Obviously, you should have a [Mailjet](https://www.mailjet.com/) account. If you're not a client yet, you can [subscribe for a free account](https://app.mailjet.com/signup) (and send immediately up to 6000 free emails a month!). __Warning:__ don't use a disposable email address (gmail, yahoo, etc included), as you'll be likely to be blocked by our anti-spammer policy.
 
-Some basic knowledge about [MJML](https://mjml.io/) is a plus, but isn't mandatory. If you prefer to code your email in HTML, we provide you with a ready-to-use `index.html` file that you can find at the root of this repository.
-You could also play with the code using the <a href="https://mjml.io/try-it-live"><img src="https://mjml.io/favicon.ico"/>&nbsp;Try it live</a> links below the code snippets. 
+Some basic knowledge about [MJML](https://mjml.io/) is a plus, but isn't mandatory. MJML is an open source markup language making responsive email easy: you can catch its self-explanatory syntax based on rows (`<mj-section>`) and columns (`<mj-column>`) in a minute. If you prefer to code your email in HTML, we provide you with a ready-to-use `index.html` file that you can find at the root of this repository.You could also play with the code using the <a href="https://mjml.io/try-it-live"><img src="https://mjml.io/favicon.ico"/>&nbsp;Try it live</a> links below the code snippets.
 
 If you're a [MJML API](https://mjml.io/api) user (if not, join us, it's currently in [open beta](https://mjml.io/api)), you'll also be able to use our email sender tool we built especially for this tutorial. Go check the tool's [README](#) for more informations.
-
-
 
 <br />
 
@@ -433,7 +430,7 @@ Note that this time, the `<mj-raw>` is wrapping the column. That's a good idea f
 
 <br />
 
-### Because saved the best for last
+### Because we saved the best for last
 
 Let's finish by a simple footer.
 
