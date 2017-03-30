@@ -30,7 +30,7 @@ From online shoe stores to indie music platforms, any company selling products o
 Obviously, you should have a [Mailjet](https://www.mailjet.com/) account. If you're not a client yet, you can [subscribe for a free account](https://app.mailjet.com/signup) (and send immediately up to 6000 free emails a month!). __Warning:__ don't use a disposable email address (gmail, yahoo, etc included), as you'll be likely to be blocked by our anti-spammer policy.
 
 Some basic knowledge about [MJML](https://mjml.io/) is a plus, but isn't mandatory. If you prefer to code your email in HTML, we provide you with a ready-to-use `index.html` file that you can find at the root of this repository.
-You could also play with the code using the <a href="#"><img src="https://mjml.io/favicon.ico"/>&nbsp;Try it live</a> links below the code snippets. 
+You could also play with the code using the <a href="https://mjml.io/try-it-live"><img src="https://mjml.io/favicon.ico"/>&nbsp;Try it live</a> links below the code snippets. 
 
 If you're a [MJML API](https://mjml.io/api) user (if not, join us, it's currently in [open beta](https://mjml.io/api)), you'll also be able to use our email sender tool we built especially for this tutorial. Go check the tool's [README](#) for more informations.
 
@@ -42,7 +42,7 @@ If you're a [MJML API](https://mjml.io/api) user (if not, join us, it's currentl
 
 <br />
 
-## What will you achieve
+## What you will achieve
 
 The well-known men clothing shop _clothes-men.com_ has just hired you to create their new e-receipt template email.
 
@@ -50,7 +50,7 @@ Their brief: you have to create a template that displays...
 
 * all the items bought by their customer
 * the purchase informations (billing and delivery address, order number, full price with VAT)
-* a list of new items to trigger more sells
+* a list of new items to trigger more sales
 
 They provide you with a `variables.json` file, containing some mockup data.
 
@@ -246,7 +246,7 @@ Everything in between is then repeated `n` times, where `n` is the length of `ar
 
 Within the loop, a new variable `single_element` is created and updated for each iteration. You'll learn right after how to access it.
 
-Note that, to use templating language `for` loops with MJML, __you have to wrap your instructions in `<mj-raw>` tags__ so MJML won't try to parse them.
+Note that, to use templating language `for` loops with MJML, __you have to wrap your instructions in `<mj-raw>` tags__ so MJML doesn't remove them when transpiling to HTML.
 
 <br />
 
@@ -256,7 +256,7 @@ Note that, to use templating language `for` loops with MJML, __you have to wrap 
 </mj-raw>
   <mj-section mj-class="section-white" vertical-align="middle">
     ...
-  </section>
+  </mj-section>
 <mj-raw>
   {% endfor %}
 </mj-raw>
@@ -433,7 +433,7 @@ Note that this time, the `<mj-raw>` is wrapping the column. That's a good idea f
 
 <br />
 
-### Because we kept the better at the end
+### Because we kept the best at the end
 
 Let's finish by a simple footer.
 
@@ -475,10 +475,10 @@ The trick here is that you want to prevent the columns from stacking on mobile. 
 
 Hoorah! You've just implemented your first email with Mailjet templating language and MJML. We hope you've learned a lot.
 
-You were a beginner? See how email coding is now easier that ever!<br />
-More an email veteran? How does it feel compared to your usual coding flow?
+You were a beginner? See how email coding is now easier than ever!<br />
+More of an email veteran? How does it feel compared to your usual coding workflow?
 
-We'll love to have your feedback about this first tutorial, so ping us on [Twitter](https://twitter.com/mailjetdev) or come and chat on the [MJML slack channel](https://slack.mjml.io/)!
+We'd love to have your feedback about this first tutorial, so ping us on [Twitter](https://twitter.com/mailjetdev) or come and chat on the [MJML slack channel](https://slack.mjml.io/)!
 
 You want to be informed about other tutorials and nice tech articles? Subcribe to our [dev only newsletter](https://dev.mailjet.com/community/#newsletter) to stay tuned!
 
