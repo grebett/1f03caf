@@ -42,7 +42,7 @@ If you're a [MJML API](https://mjml.io/api) user (if not, join us, it's currentl
 
 <br />
 
-## What you will achieve
+## What will you achieve?
 
 The well-known men clothing shop _clothes-men.com_ has just hired you to create their new e-receipt template email.
 
@@ -433,7 +433,7 @@ Note that this time, the `<mj-raw>` is wrapping the column. That's a good idea f
 
 <br />
 
-### Because we kept the best at the end
+### Because saved the best for last
 
 Let's finish by a simple footer.
 
