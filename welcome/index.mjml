@@ -22,7 +22,7 @@
         padding-left: 8px !important;
       }
 
-      @media (max-width: 480px) {
+      @media all and (max-width: 480px) {
         td[background="left"] {
           padding-left: 0 !important;
           padding-right: 0 !important;
@@ -45,11 +45,11 @@
         </mj-column>
         <mj-column width="520px" vertical-align="middle">
           <mj-inline-links base-url="#" align="left">
-            <mj-link href="/jackets" mj-class="nav-link" padding-right="25px">JACKETS</mj-link>
-            <mj-link href="/try-it-live" mj-class="nav-link" padding-right="25px">PANTS</mj-link>
-            <mj-link href="/templates" mj-class="nav-link" padding-right="25px">JUMPER</mj-link>
-            <mj-link href="/components" mj-class="nav-link" padding-right="25px">SHIRTS</mj-link>
-            <mj-link href="/documentation" mj-class="nav-link" padding-right="25px">SHOES</mj-link>
+            <mj-link href="/jackets" mj-class="nav-link" padding-right="25px" font-size="16">JACKETS</mj-link>
+            <mj-link href="/try-it-live" mj-class="nav-link" padding-right="25px" font-size="16">PANTS</mj-link>
+            <mj-link href="/templates" mj-class="nav-link" padding-right="25px" font-size="16">JUMPER</mj-link>
+            <mj-link href="/components" mj-class="nav-link" padding-right="25px" font-size="16">SHIRTS</mj-link>
+            <mj-link href="/documentation" mj-class="nav-link" padding-right="25px" font-size="16">SHOES</mj-link>
           </mj-inline-links>
         </mj-column>
       </mj-navbar>
@@ -75,11 +75,11 @@
           <mj-text
             padding="20px"
             color="#ffffff"
-            font-family="Roboto, Helvetica, Arial, sans-serif"
+            font-family="Impact, Helvetica, Arial, sans-serif"
             align="center"
-            font-size="40px"
-            line-height="40px">
-            Hello {{ var:user.name }}, Thanks for joining Clothes!
+            font-size="30px"
+            line-height="30px">
+            HELLO {{ Upper(var:user.name) }}, THANKS FOR JOINING CLOTHES!
           </mj-text>
         </mj-hero-content>
       </mj-hero>
@@ -105,36 +105,38 @@
 
       <!-- TODO: Copy -->
       <mj-section mj-class="section-white" padding="30px">
-        <mj-column width="33%">
-          <mj-text>
-            <h3 style="color:#763b26"><span style="font-size:2em;margin-right:5px">1</span>Discover</h3>
-            <p style="color:#333333">
-              Effective Forms<br>
-              Advertising<br>
-              Internet Web Site
-            </p>
-          </mj-text>
-        </mj-column>
-        <mj-column width="33%">
-          <mj-text>
-            <h3 style="color:#763b26"><span style="font-size:2em;margin-right:5px">2</span>Shop</h3>
-            <p style="color:#333333">
-              Effective Forms<br>
-              Advertising<br>
-              Internet Web Site
-            </p>
-          </mj-text>
-        </mj-column>
-        <mj-column width="33%">
-          <mj-text>
-            <h3 style="color:#763b26"><span style="font-size:2em;margin-right:5px">3</span>Follow</h3>
-            <p style="color:#333333">
-              Effective Forms<br>
-              Advertising<br>
-              Internet Web Site
-            </p>
-          </mj-text>
-        </mj-column>
+        <mj-group width="84%">
+          <mj-column width="33%">
+            <mj-text align="center">
+              <h3 style="color:#763b26"><span style="font-size:2em;margin-right:5px">1</span>Discover</h3>
+              <p style="color:#333333">
+                Classy products<br>
+                for men in tune<br>
+                with the times
+              </p>
+            </mj-text>
+          </mj-column>
+          <mj-column width="33%">
+            <mj-text align="center">
+              <h3 style="color:#763b26"><span style="font-size:2em;margin-right:5px">2</span>Shop</h3>
+              <p style="color:#333333">
+                Our new catalog<br>
+                with 1000+<br>
+                products and refs
+              </p>
+            </mj-text>
+          </mj-column>
+          <mj-column width="33%">
+            <mj-text align="center">
+              <h3 style="color:#763b26"><span style="font-size:2em;margin-right:5px">3</span>Follow</h3>
+              <p style="color:#333333">
+                A trend that<br>
+                will never be<br>
+                outdated
+              </p>
+            </mj-text>
+          </mj-column>
+        </mj-group>
       </mj-section>
 
       <!-- Divider -->
