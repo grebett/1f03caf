@@ -1,0 +1,198 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-text font-size="13" color="#333333" font-family="Roboto, Helvetica, Arial, sans-serif" />
+      <mj-all padding="0" />
+      <mj-class name="img-bordered" border="2px solid #eeeeee" border-radius="0"/>
+      <mj-class name="divider-simple" border-width="1px" border-style="solid" border-color="#763b26" padding-top="15px" padding="0 150px 10px 150px"/>
+      <mj-class name="divider-large" border-width="3px" border-style="solid" border-color="#eeeeee" padding-top="40px" padding-bottom="20px"/>
+      <mj-class name="section-white" background-color="#ffffff" />
+      <mj-class name="nav-link" color="#763b26" font-size="20px" font-family="Roboto, Helvetica, Arial, sans-serif" />
+    </mj-attributes>
+    <mj-style>
+      html, body { background-color: lightgrey; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+      a { color: #333333; }
+
+      td[background="left"] {
+        padding-left: 30px !important;
+        padding-right: 8px !important;
+      }
+      td[background="right"] {
+        padding-right: 30px !important;
+        padding-left: 8px !important;
+      }
+
+      @media (max-width: 480px) {
+        td[background="left"] {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          padding-bottom: 30px !important;
+        }
+        td[background="right"] {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+          padding-bottom: 30px !important;
+        }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body>
+    <mj-container width="600px">
+      <!-- Navigation bar-->
+      <mj-navbar background-color="#ffffff">
+        <mj-column width="80px" vertical-align="middle">
+          <mj-image width="40px" src="https://s27.postimg.org/u09gkrbcz/logo_small.png" padding="10px"></mj-image>
+        </mj-column>
+        <mj-column width="520px" vertical-align="middle">
+          <mj-inline-links base-url="#" align="left">
+            <mj-link href="/jackets" mj-class="nav-link" padding-right="25px">JACKETS</mj-link>
+            <mj-link href="/try-it-live" mj-class="nav-link" padding-right="25px">PANTS</mj-link>
+            <mj-link href="/templates" mj-class="nav-link" padding-right="25px">JUMPER</mj-link>
+            <mj-link href="/components" mj-class="nav-link" padding-right="25px">SHIRTS</mj-link>
+            <mj-link href="/documentation" mj-class="nav-link" padding-right="25px">SHOES</mj-link>
+          </mj-inline-links>
+        </mj-column>
+      </mj-navbar>
+
+      <!-- Hero -->
+      <mj-raw>
+        <div style="display:none">
+        {% set gender = var:user.gender %}
+        {% set background-url = "https://s13.postimg.org/47hn9ykuv/hero-girl.png" %}
+        {% if gender == "male" %}
+          {% set background-url = "https://s23.postimg.org/vwj30honv/hero.png" %}
+        {% endif %}
+        </div>
+      </mj-raw>
+      <mj-hero
+        mode="fluid-height"
+        background-width="600px"
+        background-height="256px"
+        background-url="{{ background-url }}"
+        padding="100px 0px">
+        <!-- To add content like mj-image, mj-text, mj-button ... use the mj-hero-content component -->
+        <mj-hero-content width="75%">
+          <mj-text
+            padding="20px"
+            color="#ffffff"
+            font-family="Roboto, Helvetica, Arial, sans-serif"
+            align="center"
+            font-size="40px"
+            line-height="40px">
+            Hello {{ var:user.name }}, Thanks for joining Clothes!
+          </mj-text>
+        </mj-hero-content>
+      </mj-hero>
+
+      <!-- Categories -->
+      <!--TODO: Here do a for loop -->
+      <mj-section mj-class="section-white" padding-top="34px">
+        <mj-column>
+          <mj-image container-background-color="left" alt="test" href="/shoes" width="250px" src="https://s14.postimg.org/kmxmg9ay9/shoes.png"/>
+        </mj-column>
+        <mj-column>
+          <mj-image container-background-color="right" href="/jumper" width="250px" src="https://s4.postimg.org/681rbtj0t/t-shirt.png" />
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="section-white">
+          <mj-column vertical-align="bottom">
+            <mj-image container-background-color="left" href="/shirt" width="246px" src="https://s4.postimg.org/p1g3njrsd/shirt.png" />
+          </mj-column>
+          <mj-column vertical-align="bottom">
+            <mj-image container-background-color="right" href="/accessories" width="246px" src="https://s12.postimg.org/skmalob9p/accessories.png" />
+          </mj-column>
+      </mj-section>
+
+      <!-- TODO: Copy -->
+      <mj-section mj-class="section-white" padding="30px">
+        <mj-column width="33%">
+          <mj-text>
+            <h3 style="color:#763b26"><span style="font-size:2em;margin-right:5px">1</span>Discover</h3>
+            <p style="color:#333333">
+              Effective Forms<br>
+              Advertising<br>
+              Internet Web Site
+            </p>
+          </mj-text>
+        </mj-column>
+        <mj-column width="33%">
+          <mj-text>
+            <h3 style="color:#763b26"><span style="font-size:2em;margin-right:5px">2</span>Shop</h3>
+            <p style="color:#333333">
+              Effective Forms<br>
+              Advertising<br>
+              Internet Web Site
+            </p>
+          </mj-text>
+        </mj-column>
+        <mj-column width="33%">
+          <mj-text>
+            <h3 style="color:#763b26"><span style="font-size:2em;margin-right:5px">3</span>Follow</h3>
+            <p style="color:#333333">
+              Effective Forms<br>
+              Advertising<br>
+              Internet Web Site
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-section mj-class="section-white">
+        <mj-column>
+          <mj-divider mj-class="divider-simple" />
+        </mj-column>
+      </mj-section>
+
+      <!-- Social -->
+      <mj-section mj-class="section-white">
+        <mj-column>
+          <mj-social
+            border-radius="0"
+            font-family="Roboto, Helvetica, Arial, sans-serif"
+            mode="horizontal"
+            color="#763b26"
+            display="my-twitter my-instagram my-facebook"
+            my-twitter-icon-color="#ffffff"
+            my-twitter-content="TWITTER"
+            my-twitter-href="twitter page"
+            my-twitter-icon="https://s8.postimg.org/ecqv6badh/twitter.png"
+            my-instagram-icon-color="#ffffff"
+            my-instagram-content="INSTAGRAM"
+            my-instagram-href="instagram page"
+            my-instagram-icon="https://s12.postimg.org/rgiqvmcfx/instagram.png"
+            my-facebook-icon-color="#ffffff"
+            my-facebook-content="FACEBOOK"
+            my-facebook-href="facebook page"
+            inner-padding="15px"
+            my-facebook-icon="https://s1.postimg.org/i81unc3dr/facebook.png" />
+        </mj-column>
+      </mj-section>
+
+      <!-- Footer Divider -->
+      <mj-section mj-class="section-white">
+        <mj-column>
+          <mj-divider mj-class="divider-large" />
+        </mj-column>
+      </mj-section>
+
+      <!-- Footer -->
+      <mj-section mj-class="section-white" vertical-align="middle" padding-bottom="30px">
+        <mj-group>
+          <mj-column width="30%" vertical-align="middle">
+            <mj-image src="https://s13.postimg.org/6d1pbbkdv/logo.png" width="50px" alt="logo" align="right"/>
+          </mj-column>
+          <mj-column width="70%" vertical-align="middle">
+            <mj-text align="left" padding-left="20px">
+              <span style="font-style:italic">
+                <a href="#" target="_blank">Any question?</a>&nbsp;
+                <a href="#" target="_blank" style="color: #763b26; text-decoration: none">www.clothes-men.com</a>
+              </span>
+              <span style="color: #763b26">&nbsp;• <a href="#" style="color: #763b26; text-decoration: none; font-weight: bold">Unsubscribe</a></span>
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-container>
+  </mj-body>
+</mjml>
