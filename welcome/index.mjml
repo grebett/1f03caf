@@ -75,7 +75,7 @@
           <mj-text
             padding="20px"
             color="#ffffff"
-            font-family="Impact, Helvetica, Arial, sans-serif"
+            font-family="Impact, Tahoma, Helvetica, Arial, sans-serif"
             align="center"
             font-size="30px"
             line-height="30px">
@@ -85,25 +85,23 @@
       </mj-hero>
 
       <!-- Categories -->
-      <!--TODO: Here do a for loop -->
       <mj-section mj-class="section-white" padding-top="34px">
         <mj-column>
-          <mj-image container-background-color="left" alt="test" href="/shoes" width="250px" src="https://s14.postimg.org/kmxmg9ay9/shoes.png"/>
+          <mj-image container-background-color="left" alt="{{ var:categories.top_left.title }}" href="{{ var:categories.top_left.link }}" width="250px" src="{{ var:categories.top_left.image_URL }}"/>
         </mj-column>
         <mj-column>
-          <mj-image container-background-color="right" href="/jumper" width="250px" src="https://s4.postimg.org/681rbtj0t/t-shirt.png" />
+          <mj-image container-background-color="right" alt="{{ var:categories.top_right.title }}" href="{{ var:categories.top_right.link }}" width="250px" src="{{ var:categories.top_right.image_URL }}" />
         </mj-column>
       </mj-section>
       <mj-section mj-class="section-white">
           <mj-column vertical-align="bottom">
-            <mj-image container-background-color="left" href="/shirt" width="246px" src="https://s4.postimg.org/p1g3njrsd/shirt.png" />
+            <mj-image container-background-color="left" alt="{{ var:categories.bottom_left.title }}" href="{{ var:categories.bottom_left.link }}" width="246px" src="{{ var:categories.bottom_left.image_URL }}" />
           </mj-column>
           <mj-column vertical-align="bottom">
-            <mj-image container-background-color="right" href="/accessories" width="246px" src="https://s12.postimg.org/skmalob9p/accessories.png" />
+            <mj-image container-background-color="right" alt="{{ var:categories.bottom_right.title }}" href="{{ var:categories.bottom_right.link }}" width="246px" src="{{ var:categories.bottom_right.image_URL }}" />
           </mj-column>
       </mj-section>
 
-      <!-- TODO: Copy -->
       <mj-section mj-class="section-white" padding="30px">
         <mj-group width="84%">
           <mj-column width="33%">

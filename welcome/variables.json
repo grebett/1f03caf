@@ -2,5 +2,27 @@
   "user": {
     "name": "Matthew",
     "gender": "male"
+  },
+  "categories": {
+    "top_left": {
+      "title": "Shoes",
+      "link": "/shoes",
+      "image_URL": "https://s14.postimg.org/kmxmg9ay9/shoes.png"
+    },
+    "top_right": {
+      "title": "Jumper",
+      "link": "/t-shirt",
+      "image_URL": "https://s4.postimg.org/681rbtj0t/t-shirt.png"
+    },
+    "bottom_left": {
+      "title": "Shirt",
+      "link": "/shirt",
+      "image_URL": "https://s4.postimg.org/p1g3njrsd/shirt.png"
+    },
+    "bottom_right": {
+      "title": "Accessories",
+      "link": "/accessories",
+      "image_URL": "https://s12.postimg.org/skmalob9p/accessories.png"
+    }
   }
 }
