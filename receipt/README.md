@@ -446,8 +446,8 @@ The trick here is that you want to prevent the columns from stacking on mobile. 
     </mj-column>
     <mj-column width="38%" vertical-align="middle">
       <mj-text align="center" font-style="italic" padding="0">
-        <a href="#" target="_blank">Any question?</a>&nbsp;
-        <a href="#" target="_blank" style="color: #763b26; text-decoration: none">www.clothes-men.com</a>
+        <a href="clothes-men.mailjet.com/questions" target="_blank">Any question?</a>&nbsp;
+        <a href="clothes-men.mailjet.com" target="_blank" style="color: #763b26; text-decoration: none">clothes-men</a>
         <span style="color: #763b26">&nbsp;•</span>
       </mj-text>
     </mj-column>
