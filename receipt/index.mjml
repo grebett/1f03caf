@@ -31,7 +31,7 @@
           <mj-text>
             Hi {{ var:user.name }},<br />
             Thanks for your recent order. Please find all the details below.<br />
-            If you have any questions, feel free to <a href="#">contact us</a>.
+            If you have any questions, feel free to <a href="mailto:contact@clothes-men.mailjet.com">contact us</a>.
           </mj-text>
         </mj-column>
       </mj-section>
@@ -197,8 +197,8 @@
           </mj-column>
           <mj-column width="38%" vertical-align="middle">
             <mj-text align="center" font-style="italic" padding="0">
-              <a href="#" target="_blank">Any question?</a>&nbsp;
-              <a href="#" target="_blank" style="color: #763b26; text-decoration: none">www.clothes-men.com</a>
+              <a href="clothes-men.mailjet.com/questions" target="_blank">Any question?</a>&nbsp;
+              <a href="clothes-men.mailjet.com" target="_blank" style="color: #763b26; text-decoration: none">clothes-men</a>
               <span style="color: #763b26">&nbsp;•</span>
             </mj-text>
           </mj-column>

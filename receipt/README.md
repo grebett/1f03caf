@@ -117,7 +117,7 @@ Let's put this placeholder along to the rest of your text in a [`<mj-text>`](htt
     <mj-text>
       Hi {{ var:user.name }},<br />
       Thanks for your recent order. Please find all the details below.<br />
-      If you have any questions, feel free to <a href="#">contact us</a>.
+      If you have any questions, feel free to <a href="mailto:contact@clothes-men.mailjet.com">contact us</a>.
     </mj-text>
   </mj-column>
 </mj-section>
