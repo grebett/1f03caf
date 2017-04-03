@@ -1,8 +1,6 @@
 # How to create an e-receipt email template
 
-__todo: add tpl doc links when manu ok – Monday__
-
-From online shoe stores to indie music platforms, any company selling products online will have to send a receipt. In this tutorial, we're going to show you how to code an e-receipt email template step by step using MJML and Mailjet's templating language.
+From online shoe stores to indie music platforms, any company selling products online will have to send a receipt. In this tutorial, we're going to show you how to code an e-receipt email template step by step using [MJML](https://mjml.io) and [Mailjet's templating language](http://dev.mailjet.com/template-language/).
 
 ## Table of Contents
 
@@ -41,7 +39,7 @@ If you're a [MJML API](https://mjml.io/api) user (if not, join us, it's currentl
 
 ## What will you achieve?
 
-The well-known men clothing shop _clothes-men.com_ has just hired you to create their new e-receipt template email.
+The well-known men clothing shop _clothes-men.mailjet.com_ has just hired you to create their new e-receipt template email.
 
 Their brief: you have to create a template that displays...
 
@@ -71,7 +69,7 @@ First of all, you need to implement the header, composed of two images, a logo a
 
 <img src="./screenshots/header.png" />
 
-The layout you need here is very basic: two `<mj-image>` (which behave as blocks and are centered by default), in a single `<mj-column>`.
+The layout you need here is very basic: two [`<mj-image>`](https://mjml.io/documentation/#mjml-image) (which behave as blocks and are centered by default), in a single [`<mj-column>`](https://mjml.io/documentation/#mjml-column).
 
 Adjust the padding as desired with the `padding-top` attribute.
 
@@ -98,17 +96,17 @@ Don't forget the `alt` attribute, used if [your images aren't displayed by the e
 
 ### Be polite. Say hi.
 
-You are coding a transactional email template, a one-to-one conversation between _clothes-men.com_ and one of their customer. So let's greet them personally.
+You are coding a transactional email template, a one-to-one conversation between _clothes-men.mailjet.com_ and one of their customer. So let's greet them personally.
 
 <img src="./screenshots/hero.png" />
 
-Mailjet templating language enables you to use variables to personalize your template with custom data.
+Mailjet templating language enables you to use [variables](http://dev.mailjet.com/template-language/reference/#variables) to personalize your template with custom data.
 
 Remember the `variables.json` file you have been provided with? You can refer to its values directly from your template using the following pattern: `{{ var:property_key:default_value }}`.
 
 Here, you're interested in the `user.name` property, whose value is `Matthew` for this example. Your variable placeholder is then `{{ var:user.name }}`.
 
-Let's put this placeholder along to the rest of your text in a `<mj-text>` tag, left aligned by default. Note that you can use plain HTML tags, such as `<br />` and `<a>` inside a `<mj-text>`.
+Let's put this placeholder along to the rest of your text in a [`<mj-text>`](https://mjml.io/documentation/#mjml-text) tag, left aligned by default. Note that you can use plain HTML tags, such as `<br />` and `<a>` inside a [`<mj-text>`](https://mjml.io/documentation/#mjml-text).
 
 <br />
 
@@ -140,9 +138,9 @@ Now, it's time to display the order number and the billing and delivery addresse
 
 The layout you should use here is divided into two sections.
 
-The first one contains a single column and a single `<mj-text>` element. It uses a templating language variable to display the order number.
+The first one contains a single column and a single [`<mj-text>`](https://mjml.io/documentation/#mjml-text) element. It uses a templating language variable to display the order number.
 
-The latter uses two columns. If you don't provide a specific width, they adopt their default behavior and share the available space equally between each other, i.e. 50% of their parent container. Let's look at the templating language variables used here. As you can see, you can dive deeply into a JSON representation to find the value you need and display it along with regular static text.
+The latter uses two columns. If you don't provide a specific width, they adopt their default behavior and share the available space equally between each other, i.e. 50% of their parent container. Let's look at the [templating language variables](http://dev.mailjet.com/template-language/reference/#variables) used here. As you can see, you can dive deeply into a JSON representation to find the value you need and display it along with regular static text.
 
 <br />
 
@@ -190,7 +188,7 @@ The latter uses two columns. If you don't provide a specific width, they adopt t
 
 ### Looping over items data
 
-As reproduced below, the mockup data contains an `items` array with three object children. But _clothes-men.com_ customers won't buy a fix amount of items every time! You need a way to iterate over this data safely, and display an items list whatever their number.
+As reproduced below, the mockup data contains an `items` array with three object children. But _clothes-men.mailjet.com_ customers won't buy a fix amount of items every time! You need a way to iterate over this data safely, and display an items list whatever their number.
 
 <br />
 
@@ -243,7 +241,7 @@ Everything in between is then repeated `n` times, where `n` is the length of `ar
 
 Within the loop, a new variable `single_element` is created and updated for each iteration. You'll learn right after how to access it.
 
-Note that, to use templating language `for` loops with MJML, __you have to wrap your instructions in `<mj-raw>` tags__ so MJML doesn't remove them when transpiling to HTML.
+Note that, to use templating language [`for` loops](http://dev.mailjet.com/template-language/reference/#loop-statements) with MJML, __you have to wrap your instructions in [`<mj-raw>`](https://mjml.io/documentation/#mjml-raw) tags__ so MJML doesn't remove them when transpiling to HTML.
 
 <br />
 
@@ -272,13 +270,13 @@ Indeed, before you can boast of being the king of the loops in email, you should
 
 <img src="./screenshots/item.png" />
 
-In the `for` loop, you will use a `<mj-section>` for each item.
+In the [`for` loop](http://dev.mailjet.com/template-language/reference/#loop-statements), you will use a [`<mj-section>`](https://mjml.io/documentation/#mjml-section) for each item.
 
-Each section is composed of three columns, displaying item's picture, infos (title, size, quantity) and price respectively. The two latter are grouped with a `<mj-group>` to align them vertically with the column containing the image.
+Each section is composed of three columns, displaying item's picture, infos (title, size, quantity) and price respectively. The two latter are grouped with a [`<mj-group>`](https://mjml.io/documentation/#mjml-group) to align them vertically with the column containing the image.
 
 Because you named your child element `item`, you can access the object properties directly using this syntax: `{{ item.property_key }}`.
 
-For instance, the `<mj-image>` `src` attribute will be dynamically updated for each iteration with the correct `image_URL` property.
+For instance, the [`<mj-image>`](https://mjml.io/documentation/#mjml-image) `src` attribute will be dynamically updated for each iteration with the correct `image_URL` property.
 
 The `item` variable follows the same rules as other templating language variables, so you can add default values and dive deeply into their values (and use another `for` loop if these values are arrays!).
 
@@ -319,7 +317,7 @@ The `item` variable follows the same rules as other templating language variable
 
 <br />
 
-Now that you have implemented a single item, let's see what is the result when the `for` loop is executed and the template rendered:
+Now that you have implemented a single item, let's see what is the result when the [`for` loop](http://dev.mailjet.com/template-language/reference/#loop-statements) is executed and the template rendered:
 
 <img src="./screenshots/items.png" />
 
@@ -339,7 +337,7 @@ The bill please! You have to implement a detailed total price with shipping, tax
 
 Well, if you look closely to the `variables.json` file, you'll find a `order.sales_taxes_percentage` property, whose value is `0.0825` (i.e. 8.25%).
 
-You're out of danger! Using templating language arithmetics and built-in functions, calculating the taxes amount is a child's play!
+You're out of danger! Using [templating language arithmetics](http://dev.mailjet.com/template-language/reference/#operators) and [built-in functions](http://dev.mailjet.com/template-language/reference/#functions), calculating the taxes amount is a child's play!
 
 First, to apply the percentage, some very basic math:<br/>*total_amount* __*__ *taxes_percentage* __=>__ 134.97 * 0.0825 __=__ 11.135025.
 
@@ -378,11 +376,11 @@ Very convenient, isn't it? And of course, because you don't want to display more
 
 ### I bet you want to buy more things!
 
-Because, let's be fair, _clothes-men.com_ wants to sell them more... They ask you to display a fix amount of suggestions, and provide you with some array data in the `variables.json` file. You're now a `for` loop expert, so this is not a problem anymore!
+Because, let's be fair, _clothes-men.mailjet.com_ wants to sell them more... They ask you to display a fix amount of suggestions, and provide you with some array data in the `variables.json` file. You're now a [`for` loop](http://dev.mailjet.com/template-language/reference/#loop-statements) expert, so this is not a problem anymore!
 
 <img src="./screenshots/suggestions.png" />
 
-Note that this time, the `<mj-raw>` is wrapping the column. That's a good idea for a fixed number of columns, but what will happen if we have more? Use your imagination! The solution is behind the scope of this tutorial, but if you want to chat about it, [join the MJML slack](https://slack.mjml.io/) ;)
+Note that this time, the [`<mj-raw>`](https://mjml.io/documentation/#mjml-raw) is wrapping the column. That's a good idea for a fixed number of columns, but what will happen if we have more? Use your imagination! The solution is behind the scope of this tutorial, but if you want to chat about it, [join the MJML slack](https://slack.mjml.io/) ;)
 
 <br />
 
@@ -436,7 +434,7 @@ Let's finish by a simple footer.
 
 <img src="./screenshots/footer.png" />
 
-The trick here is that you want to prevent the columns from stacking on mobile. A `<mj-group>` is then the solution. More info in the [official documentation](https://mjml.io/documentation/).
+The trick here is that you want to prevent the columns from stacking on mobile. A [`<mj-group>`](https://mjml.io/documentation/#mjml-group) is then the solution. More info in the [official documentation](https://mjml.io/documentation/).
 
 <br />
 
@@ -477,7 +475,7 @@ More of an email veteran? How does it feel compared to your usual coding workflo
 
 We'd love to have your feedback about this first tutorial, so ping us on [Twitter](https://twitter.com/mailjetdev) or come and chat on the [MJML slack channel](https://slack.mjml.io/)!
 
-You want to be informed about other tutorials and nice tech articles? Subcribe to our [dev only newsletter](https://dev.mailjet.com/community/#newsletter) to stay tuned!
+You want to be informed about other tutorials and nice tech articles? Subscribe to our [dev only newsletter](https://dev.mailjet.com/community/#newsletter) to stay tuned!
 
 <br />
 
