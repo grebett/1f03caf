@@ -25,7 +25,7 @@ From online shoe stores to indie music platforms, any company selling products o
 
 ## Prerequisites
 
-Obviously, you should have a [Mailjet](https://www.mailjet.com/) account. If you're not a client yet, you can [subscribe for a free account](https://app.mailjet.com/signup) (and send immediately up to 6000 free emails a month!). __Warning:__ don't use a disposable email address (gmail, yahoo, etc included), as you'll be likely to be blocked by our anti-spammer policy.
+Obviously, you should have a [Mailjet](https://www.mailjet.com/) account. If you're not a client yet, you can [subscribe for a free account](https://app.mailjet.com/signup) (and send immediately up to 6,000 free emails a month!). __Warning:__ you have to show clean hands when you subscribe, because we have a strong anti-spammer policy.
 
 Some basic knowledge about [MJML](https://mjml.io/) is a plus, but isn't mandatory. MJML is an open source markup language making responsive email easy: you can catch its self-explanatory syntax based on rows (`<mj-section>`) and columns (`<mj-column>`) in a minute. If you prefer to code your email in HTML, we provide you with a ready-to-use `index.html` file that you can find at the root of this repository.You could also play with the code using the <a href="https://mjml.io/try-it-live"><img src="https://mjml.io/favicon.ico"/>&nbsp;Try it live</a> links below the code snippets.
 
@@ -236,8 +236,6 @@ That's when templating language `for` loops come in handy.
 Start your `for` loops with a `{% for single_element in array_variable %}` statement.
 
 End it with a `{% endfor %}` statement.
-
-Everything in between is then repeated `n` times, where `n` is the length of `array_variable`.
 
 Within the loop, a new variable `single_element` is created and updated for each iteration. You'll learn right after how to access it.
 
