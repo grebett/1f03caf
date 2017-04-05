@@ -46,10 +46,10 @@
         <mj-column width="520px" vertical-align="middle">
           <mj-inline-links base-url="#" align="left">
             <mj-link href="/jackets" mj-class="nav-link" padding-right="25px" font-size="16">JACKETS</mj-link>
-            <mj-link href="/try-it-live" mj-class="nav-link" padding-right="25px" font-size="16">PANTS</mj-link>
-            <mj-link href="/templates" mj-class="nav-link" padding-right="25px" font-size="16">JUMPER</mj-link>
-            <mj-link href="/components" mj-class="nav-link" padding-right="25px" font-size="16">SHIRTS</mj-link>
-            <mj-link href="/documentation" mj-class="nav-link" padding-right="25px" font-size="16">SHOES</mj-link>
+            <mj-link href="/pants" mj-class="nav-link" padding-right="25px" font-size="16">PANTS</mj-link>
+            <mj-link href="/jumper" mj-class="nav-link" padding-right="25px" font-size="16">JUMPER</mj-link>
+            <mj-link href="/shirts" mj-class="nav-link" padding-right="25px" font-size="16">SHIRTS</mj-link>
+            <mj-link href="/shoes" mj-class="nav-link" padding-right="25px" font-size="16">SHOES</mj-link>
           </mj-inline-links>
         </mj-column>
       </mj-navbar>
@@ -102,6 +102,7 @@
           </mj-column>
       </mj-section>
 
+      <!-- Copy -->
       <mj-section mj-class="section-white" padding="30px">
         <mj-group width="84%">
           <mj-column width="33%">
