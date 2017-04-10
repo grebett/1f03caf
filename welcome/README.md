@@ -22,7 +22,7 @@ Welcome emails are a powerful way to communicate with your users, because they e
 
 ## Prerequisites
 
-Obviously, you should have a [Mailjet](https://www.mailjet.com/) account. If you're not a client yet, you can [subscribe for a free account](https://app.mailjet.com/signup) (and send immediately up to 6,000 free emails a month!). __Warning:__ you have to show clean hands when you subscribe, because we have a strong anti-spammer policy.
+Obviously, you should have a [Mailjet](https://www.mailjet.com/) account. If you're not a client yet, you can [subscribe for a free account](https://app.mailjet.com/signup) (and send immediately up to 6,000 free emails a month!).
 
 Some basic knowledge about [MJML](https://mjml.io/) is a plus, but isn't mandatory. MJML is an open source markup language making responsive email easy: you can catch its self-explanatory syntax based on rows (`<mj-section>`) and columns (`<mj-column>`) in a minute. If you prefer to code your email in HTML, we provide you with a ready-to-use `index.html` file that you can find at the root of this repository.You could also play with the code using the <a href="https://mjml.io/try-it-live"><img src="https://mjml.io/favicon.ico"/>&nbsp;Try it live</a> links below the code snippets.
 
@@ -72,9 +72,15 @@ This [`<mj-navbar>`](https://mjml.io/documentation/#mjml-navbar) is composed of 
 
 The first one contains a [`<mj-image>`](https://mjml.io/documentation/#mjml-image) that displays the logo.
 
-The second [`<mj-column>`](https://mjml.io/documentation/#mjml-column) hosts a `<mj-inline-links>` component that will create your links based on a list of `<mj-link>` children. Way cleaner than a forest of `<a>` and `<table>`, right? A little of style customization with inline CSS attributes and a `<mj-class>` and here we are!
+The second [`<mj-column>`](https://mjml.io/documentation/#mjml-column) hosts a `<mj-inline-links>` component that will create your links based on a list of `<mj-link>` children. Way cleaner than a forest of `<a>` and `<table>`, right? A little of style customization with inline CSS attributes and a [`<mj-class>`](https://mjml.io/documentation/#mjml-attributes):
 
 ```XML
+<mj-attributes>
+  <mj-class name="nav-link" color="#763b26" font-size="20px" font-family="Roboto, Helvetica, Arial, sans-serif" />
+</mj-attributes>
+
+[...]
+
 <!-- Navigation bar-->
 <mj-navbar background-color="#ffffff">
   <mj-column width="80px" vertical-align="middle">
@@ -130,7 +136,7 @@ In the snippet below, look how we use the `background-url` variable we've just s
 
 As you can see, we're also using a new built-in interactive component: [`<mj-hero>`](https://mjml.io/documentation/#mjml-hero).
 
-Finally, look at the `Upper` function. As you can imagine, it will __at run time__ transform the case of the `user.name` variable. Look at the documentation to discover all the built-in functions you may need! You miss some? [We're open for suggestions.&nbsp;📩](mailto:api@mailjet.com?subject=%F0%9F%91%8B%20Hey%20Mailjet!%20I%20have%20an%20idea%20of%20a%20new%20templating%20language%20function)
+Finally, look at the `Upper` function. As you can imagine, it will __at run time__ transform the case of the `user.name` variable. Look at the [documentation](https://dev.mailjet.com/template-language/reference/#functions) to discover all the built-in functions you may need! You miss some? [We're open for suggestions.&nbsp;📩](mailto:api@mailjet.com?subject=%F0%9F%91%8B%20Hey%20Mailjet!%20I%20have%20an%20idea%20of%20a%20new%20templating%20language%20function)
 
 ```XML
 <mj-hero
@@ -271,7 +277,7 @@ Today, displaying a list of social networks links with their respective icons is
 
 ## Conclusion
 
-And that's it. We do recommend you to have a look to the whole file and tweak it as you wish! You'll thank us later when you shoot welcome emails faster than Lucky Luke ;)
+And that's it. We do recommend you to have a look to the whole file and tweak it as you wish! You'll thank us later when you shoot welcome emails faster than [Lucky Luke](https://s22.postimg.org/vp9be0x9d/ff5b6f459fa043de0f2b5bfa7e77b8b2.jpg) ;)
 
 We'd love to have your feedback about this first tutorial, so ping us on [Twitter](https://twitter.com/mailjetdev) or come and chat on the [MJML slack channel](https://slack.mjml.io/)!
 
