@@ -84,7 +84,7 @@ The second [`<mj-column>`](https://mjml.io/documentation/#mjml-column) hosts a `
 <!-- Navigation bar-->
 <mj-navbar background-color="#ffffff">
   <mj-column width="80px" vertical-align="middle">
-    <mj-image width="40px" src="https://s27.postimg.org/u09gkrbcz/logo_small.png" padding="10px"></mj-image>
+    <mj-image width="40px" src="http://bit.ly/mj-tpl-tuto-logo-small" padding="10px"></mj-image>
   </mj-column>
   <mj-column width="520px" vertical-align="middle">
     <mj-inline-links base-url="#" align="left">
@@ -123,11 +123,11 @@ Let's set a custom `background-url` variable whose value is the hero image URL. 
 <!-- Hero -->
 <mj-raw>
   <div style="display:none">
-  {% set gender = var:user.gender %}
-  {% set background-url = "https://s13.postimg.org/47hn9ykuv/hero-girl.png" %}
-  {% if gender == "male" %}
-    {% set background-url = "https://s23.postimg.org/vwj30honv/hero.png" %}
-  {% endif %}
+    {% set gender = var:user.gender %}
+    {% set background-url = "http://bit.ly/mj-tpl-tuto-hero-girl" %}
+    {% if gender == "male" %}
+      {% set background-url = "http://bit.ly/mj-tpl-tuto-hero" %}
+    {% endif %}
   </div>
 </mj-raw>
 ```
@@ -180,22 +180,22 @@ In the `variables.json` file, you'll find this list of categories:
   "top_left": {
     "title": "Shoes",
     "link": "/shoes",
-    "image_URL": "https://s14.postimg.org/kmxmg9ay9/shoes.png"
+    "image_URL": "http://bit.ly/mj-tpl-tuto-shoes"
   },
   "top_right": {
     "title": "Jumper",
     "link": "/t-shirt",
-    "image_URL": "https://s4.postimg.org/681rbtj0t/t-shirt.png"
+    "image_URL": "http://bit.ly/mj-tpl-lang-tuto-tshirt"
   },
   "bottom_left": {
     "title": "Shirt",
     "link": "/shirt",
-    "image_URL": "https://s4.postimg.org/p1g3njrsd/shirt.png"
+    "image_URL": "http://bit.ly/mj-tpl-lang-tuto-shirt"
   },
   "bottom_right": {
     "title": "Accessories",
     "link": "/accessories",
-    "image_URL": "https://s12.postimg.org/skmalob9p/accessories.png"
+    "image_URL": "http://bit.ly/mj-tpl-lang-tuto-accessories"
   }
 }
 ```
@@ -254,16 +254,16 @@ Today, displaying a list of social networks links with their respective icons is
       my-twitter-icon-color="#ffffff"
       my-twitter-content="TWITTER"
       my-twitter-href="twitter page"
-      my-twitter-icon="https://s8.postimg.org/ecqv6badh/twitter.png"
+      my-twitter-icon="http://bit.ly/mj-tpl-tuto-twitter"
       my-instagram-icon-color="#ffffff"
       my-instagram-content="INSTAGRAM"
       my-instagram-href="instagram page"
-      my-instagram-icon="https://s12.postimg.org/rgiqvmcfx/instagram.png"
+      my-instagram-icon="http://bit.ly/mj-tpl-tuto-instagram"
       my-facebook-icon-color="#ffffff"
       my-facebook-content="FACEBOOK"
       my-facebook-href="facebook page"
       inner-padding="15px"
-      my-facebook-icon="https://s1.postimg.org/i81unc3dr/facebook.png" />
+      my-facebook-icon="http://bit.ly/mj-tpl-tuto-facebook" />
   </mj-column>
 </mj-section>
 ```

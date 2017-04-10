@@ -41,15 +41,15 @@
       <!-- Navigation bar-->
       <mj-navbar background-color="#ffffff">
         <mj-column width="80px" vertical-align="middle">
-          <mj-image width="40px" src="https://s27.postimg.org/u09gkrbcz/logo_small.png" padding="10px"></mj-image>
+          <mj-image width="40px" src="http://bit.ly/mj-tpl-tuto-logo-small" padding="10px"></mj-image>
         </mj-column>
         <mj-column width="520px" vertical-align="middle">
           <mj-inline-links base-url="#" align="left">
             <mj-link href="/jackets" mj-class="nav-link" padding-right="25px" font-size="16">JACKETS</mj-link>
-            <mj-link href="/try-it-live" mj-class="nav-link" padding-right="25px" font-size="16">PANTS</mj-link>
-            <mj-link href="/templates" mj-class="nav-link" padding-right="25px" font-size="16">JUMPER</mj-link>
-            <mj-link href="/components" mj-class="nav-link" padding-right="25px" font-size="16">SHIRTS</mj-link>
-            <mj-link href="/documentation" mj-class="nav-link" padding-right="25px" font-size="16">SHOES</mj-link>
+            <mj-link href="/pants" mj-class="nav-link" padding-right="25px" font-size="16">PANTS</mj-link>
+            <mj-link href="/jumper" mj-class="nav-link" padding-right="25px" font-size="16">JUMPER</mj-link>
+            <mj-link href="/shirts" mj-class="nav-link" padding-right="25px" font-size="16">SHIRTS</mj-link>
+            <mj-link href="/shoes" mj-class="nav-link" padding-right="25px" font-size="16">SHOES</mj-link>
           </mj-inline-links>
         </mj-column>
       </mj-navbar>
@@ -58,9 +58,9 @@
       <mj-raw>
         <div style="display:none">
         {% set gender = var:user.gender %}
-        {% set background-url = "https://s13.postimg.org/47hn9ykuv/hero-girl.png" %}
+        {% set background-url = "http://bit.ly/mj-tpl-tuto-hero-girl" %}
         {% if gender == "male" %}
-          {% set background-url = "https://s23.postimg.org/vwj30honv/hero.png" %}
+          {% set background-url = "http://bit.ly/mj-tpl-tuto-hero" %}
         {% endif %}
         </div>
       </mj-raw>
@@ -102,6 +102,7 @@
           </mj-column>
       </mj-section>
 
+      <!-- Copy -->
       <mj-section mj-class="section-white" padding="30px">
         <mj-group width="84%">
           <mj-column width="33%">
@@ -156,16 +157,16 @@
             my-twitter-icon-color="#ffffff"
             my-twitter-content="TWITTER"
             my-twitter-href="twitter page"
-            my-twitter-icon="https://s8.postimg.org/ecqv6badh/twitter.png"
+            my-twitter-icon="http://bit.ly/mj-tpl-tuto-twitter"
             my-instagram-icon-color="#ffffff"
             my-instagram-content="INSTAGRAM"
             my-instagram-href="instagram page"
-            my-instagram-icon="https://s12.postimg.org/rgiqvmcfx/instagram.png"
+            my-instagram-icon="http://bit.ly/mj-tpl-tuto-instagram"
             my-facebook-icon-color="#ffffff"
             my-facebook-content="FACEBOOK"
             my-facebook-href="facebook page"
             inner-padding="15px"
-            my-facebook-icon="https://s1.postimg.org/i81unc3dr/facebook.png" />
+            my-facebook-icon="http://bit.ly/mj-tpl-tuto-facebook" />
         </mj-column>
       </mj-section>
 
@@ -180,13 +181,13 @@
       <mj-section mj-class="section-white" vertical-align="middle" padding-bottom="30px">
         <mj-group>
           <mj-column width="30%" vertical-align="middle">
-            <mj-image src="https://s13.postimg.org/6d1pbbkdv/logo.png" width="50px" alt="logo" align="right"/>
+            <mj-image src="http://bit.ly/mj-tpl-tuto-logo-full" width="50px" alt="logo" align="right"/>
           </mj-column>
           <mj-column width="70%" vertical-align="middle">
             <mj-text align="left" padding-left="20px">
               <span style="font-style:italic">
                 <a href="#" target="_blank">Any question?</a>&nbsp;
-                <a href="#" target="_blank" style="color: #763b26; text-decoration: none">www.clothes-men.com</a>
+                <a href="#" target="_blank" style="color: #763b26; text-decoration: none">clothes-men</a>
               </span>
               <span style="color: #763b26">&nbsp;• <a href="#" style="color: #763b26; text-decoration: none; font-weight: bold">Unsubscribe</a></span>
             </mj-text>

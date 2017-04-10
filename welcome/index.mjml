@@ -41,7 +41,7 @@
       <!-- Navigation bar-->
       <mj-navbar background-color="#ffffff">
         <mj-column width="80px" vertical-align="middle">
-          <mj-image width="40px" src="http://bit.ly/mj-tpl-tuto-logo" padding="10px"></mj-image>
+          <mj-image width="40px" src="http://bit.ly/mj-tpl-tuto-logo-small" padding="10px"></mj-image>
         </mj-column>
         <mj-column width="520px" vertical-align="middle">
           <mj-inline-links base-url="#" align="left">
@@ -181,7 +181,7 @@
       <mj-section mj-class="section-white" vertical-align="middle" padding-bottom="30px">
         <mj-group>
           <mj-column width="30%" vertical-align="middle">
-            <mj-image src="http://bit.ly/mj-tpl-tuto-logo" width="50px" alt="logo" align="right"/>
+            <mj-image src="http://bit.ly/mj-tpl-tuto-logo-full" width="50px" alt="logo" align="right"/>
           </mj-column>
           <mj-column width="70%" vertical-align="middle">
             <mj-text align="left" padding-left="20px">

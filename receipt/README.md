@@ -81,8 +81,8 @@ Don't forget the `alt` attribute, used if [your images aren't displayed by the e
 <!-- Logo -->
 <mj-section mj-class="section-white" padding-top="30px">
   <mj-column>
-    <mj-image src="https://s13.postimg.org/6d1pbbkdv/logo.png" width="100px" alt="logo"/>
-    <mj-image src="https://s13.postimg.org/p1occe0oj/thanks.png" width="90px" alt="thanks!" padding-top="20px"/>
+    <mj-image src="http://bit.ly/mj-tpl-tuto-logo-full" width="100px" alt="logo"/>
+    <mj-image src="http://bit.ly/mj-tpl-tuto-thanks" width="90px" alt="thanks!" padding-top="20px"/>
   </mj-column>
 </mj-section>
 ```
@@ -196,7 +196,7 @@ As reproduced below, the mockup data contains an `items` array with three object
 "items": [
   {
     "title": "Brown shoes",
-    "image_URL": "https://s13.postimg.org/r3otqmynn/shoes.png",
+    "image_URL": "http://bit.ly/mj-tpl-tuto-shoes",
     "price": {
       "currency": "$",
       "separator": ".",
@@ -207,7 +207,7 @@ As reproduced below, the mockup data contains an `items` array with three object
   },
   {
     "title": "Blue T-shirt",
-    "image_URL": "https://s13.postimg.org/onn0csgkz/t_shirt.png",
+    "image_URL": "http://bit.ly/mj-tpl-lang-tuto-tshirt",
     "price": {
       "currency": "$",
       "separator": ".",
@@ -218,7 +218,7 @@ As reproduced below, the mockup data contains an `items` array with three object
   },
   {
     "title": "Pale blue shirt",
-    "image_URL": "https://s13.postimg.org/shgglxxwz/shirt.png",
+    "image_URL": "http://bit.ly/mj-tpl-lang-tuto-shirt",
     "price": {
       "currency": "$",
       "amount": 24.99
@@ -440,7 +440,7 @@ The trick here is that you want to prevent the columns from stacking on mobile. 
 <mj-section mj-class="section-white" vertical-align="middle" padding-bottom="30px">
   <mj-group>
     <mj-column width="31%" vertical-align="middle">
-      <mj-image src="https://s13.postimg.org/6d1pbbkdv/logo.png" width="20px" alt="logo" align="right"/>
+      <mj-image src="http://bit.ly/mj-tpl-tuto-logo-full" width="20px" alt="logo" align="right"/>
     </mj-column>
     <mj-column width="38%" vertical-align="middle">
       <mj-text align="center" font-style="italic" padding="0">
@@ -450,7 +450,7 @@ The trick here is that you want to prevent the columns from stacking on mobile. 
       </mj-text>
     </mj-column>
     <mj-column width="31%" vertical-align="middle">
-      <mj-image src="https://s24.postimg.org/3m7nc9qad/twitter.png" width="25px" alt="logo" align="left"/>
+      <mj-image src="http://bit.ly/mj-tpl-tuto-twitter" width="25px" alt="logo" align="left"/>
     </mj-column>
   </mj-group>
 </mj-section>

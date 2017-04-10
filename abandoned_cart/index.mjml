@@ -42,7 +42,7 @@
       <mj-section
         padding-top="100px"
         background-url="https://s23.postimg.org/vwq5ctlln/hero.png"
-        background-size="100% 420px"
+        background-size="100%"
         background-repeat="no-repeat"
         background-color="#ffffff">
         <mj-section vertical-align="middle">
