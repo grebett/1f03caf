@@ -20,8 +20,8 @@
       <!-- Logo -->
       <mj-section mj-class="section-white" padding-top="30px">
         <mj-column>
-          <mj-image src="https://s13.postimg.org/6d1pbbkdv/logo.png" width="100px" alt="logo"/>
-          <mj-image src="https://s13.postimg.org/p1occe0oj/thanks.png" width="90px" alt="thanks!" padding-top="20px"/>
+          <mj-image src="http://bit.ly/mj-tpl-tuto-logo-full" width="100px" alt="logo"/>
+          <mj-image src="http://bit.ly/mj-tpl-tuto-thanks" width="90px" alt="thanks!" padding-top="20px"/>
         </mj-column>
       </mj-section>
 
@@ -193,7 +193,7 @@
       <mj-section mj-class="section-white" vertical-align="middle" padding-bottom="30px">
         <mj-group>
           <mj-column width="31%" vertical-align="middle">
-            <mj-image src="https://s13.postimg.org/6d1pbbkdv/logo.png" width="20px" alt="logo" align="right"/>
+            <mj-image src="http://bit.ly/mj-tpl-tuto-logo-full" width="20px" alt="logo" align="right"/>
           </mj-column>
           <mj-column width="38%" vertical-align="middle">
             <mj-text align="center" font-style="italic" padding="0">
@@ -203,7 +203,7 @@
             </mj-text>
           </mj-column>
           <mj-column width="31%" vertical-align="middle">
-            <mj-image src="https://s24.postimg.org/3m7nc9qad/twitter.png" width="25px" alt="logo" align="left"/>
+            <mj-image src="http://bit.ly/mj-tpl-tuto-twitter" width="25px" alt="logo" align="left"/>
           </mj-column>
         </mj-group>
       </mj-section>

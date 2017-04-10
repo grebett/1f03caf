@@ -23,7 +23,7 @@
     "items": [
       {
         "title": "Brown shoes",
-        "image_URL": "https://s13.postimg.org/r3otqmynn/shoes.png",
+        "image_URL": "http://bit.ly/mj-tpl-tuto-shoes",
         "price": {
           "currency": "$",
           "separator": ".",
@@ -34,7 +34,7 @@
       },
       {
         "title": "Blue T-shirt",
-        "image_URL": "https://s13.postimg.org/onn0csgkz/t_shirt.png",
+        "image_URL": "http://bit.ly/mj-tpl-lang-tuto-tshirt",
         "price": {
           "currency": "$",
           "separator": ".",
@@ -45,7 +45,7 @@
       },
       {
         "title": "Pale blue shirt",
-        "image_URL": "https://s13.postimg.org/shgglxxwz/shirt.png",
+        "image_URL": "http://bit.ly/mj-tpl-lang-tuto-shirt",
         "price": {
           "currency": "$",
           "amount": 24.99
@@ -69,18 +69,18 @@
   "suggestions": [
     {
       "title": "light grey t-shirt",
-      "link": "https://clothes-men.com/123456",
-      "image_URL": "https://s13.postimg.org/7gqf10uer/men1.png"
+      "link": "https://clothes-men.mailjet.com/123456",
+      "image_URL": "http://bit.ly/mj-tpl-tuto-men1"
     },
     {
       "title": "dark grey t-shirt",
-      "link": "https://clothes-men.com/123456",
-      "image_URL": "https://s13.postimg.org/62ys5pv5f/men2.png"
+      "link": "https://clothes-men.mailjet.com/123456",
+      "image_URL": "http://bit.ly/mj-tpl-tuto-men2"
     },
     {
       "title": "brown sweat-shirt",
-      "link": "https://clothes-men.com/123456",
-      "image_URL": "https://s13.postimg.org/51yjgle5v/men3.png"
+      "link": "https://clothes-men.mailjet.com/123456",
+      "image_URL": "http://bit.ly/mj-tpl-tuto-men3"
     }
   ]
 }
