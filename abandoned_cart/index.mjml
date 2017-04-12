@@ -38,13 +38,14 @@
         </mj-column>
       </mj-navbar>
 
-      <!-- Items -->
+      <!-- Hero + Cart -->
       <mj-section
         padding-top="100px"
         background-url="https://s23.postimg.org/vwq5ctlln/hero.png"
         background-size="100%"
         background-repeat="no-repeat"
         background-color="#ffffff">
+        <!-- Hero texts -->
         <mj-section vertical-align="middle">
           <mj-column>
             <mj-text
@@ -64,7 +65,7 @@
             </mj-text>
           </mj-column>
         </mj-section>
-        <!-- Card -->
+        <!-- Cart -->
         <mj-section background-color="transparent">
           <!-- Image -->
           <mj-column vertical-align="middle" width="295px" background-color="#ffffff" border="1px solid transparent">
@@ -98,6 +99,8 @@
             <mj-table font-size="18px" padding="5px 24px 10px 24px">
               <tr><td>SUBTOTAL:</td><td style="text-align: right">{{ var:order.subtotal.currency }}{{ var:order.subtotal.amount }}</td></tr>
             </mj-table>
+
+            <!-- CTAs -->
             <mj-button href="checkout" background-color="#2c4961" padding="10px">
               continue checkout
             </mj-button>
