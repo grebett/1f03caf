@@ -123,9 +123,9 @@ When their clients open the abandoned cart emails, _clothes-men.mailjet.com_ cre
 
 First, as for our [welcome email template](../welcome), we have to implement a hero, i.e. an image (often inspirational) with some catchy text on it. If MJML provides us with an interactive component to do this job, the specific design forces us to use our imagination here.
 
-As you can see, we're using two nested [`<mj-section>`](https://mjml.io/documentation/#mjml-section). This is because the MJML API we're using for this tutorial does not support yet the [`<mj-wrapper>`](https://mjml.io/documentation/#mjml-wrapper) component. If you're parsing your MJML code yourself, feel free to [play with it!](https://mjml.io/try-it-live/components/wrapper)
+As you can see, we're using two nested [`<mj-section>`](https://mjml.io/documentation/?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial#mjml-section). This is because the MJML API we're using for this tutorial does not support yet the [`<mj-wrapper>`](https://mjml.io/documentation/?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial#mjml-wrapper) component. If you're parsing your MJML code yourself, feel free to [play with it!](https://mjml.io/try-it-live/components/wrapper?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial)
 
-We're using our image as a background image, filling the `background-url` attribute. Then, in our first [`<mj-section>`](https://mjml.io/documentation/#mjml-section), we use two [`<mj-text>`](https://mjml.io/documentation/#mjml-text) to display our catchy sentences.
+We're using our image as a background image, filling the `background-url` attribute. Then, in our first [`<mj-section>`](https://mjml.io/documentation/?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial#mjml-section), we use two [`<mj-text>`](https://mjml.io/documentation/?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial#mjml-text) to display our catchy sentences.
 
 ```XML
 <!-- Hero + Cart -->
@@ -212,7 +212,7 @@ The cart is a list of items, whose data can be found in the `variables.json` fil
 }
 ```
 
-Using Mailjet's templating language [variables](http://dev.mailjet.com/template-language/reference/?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial#transactional-templating#variables), we can use this data and display it in our emails using the following pattern: `{{ var:property_key:default_value }}`.
+Using Mailjet's templating language [variables](http://dev.mailjet.com/template-language/reference/?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial#variables), we can use this data and display it in our emails using the following pattern: `{{ var:property_key:default_value }}`.
 
 Moreover, as this data is an array source, we can browse it to access each inner object using templating language `for` loops.
 
@@ -250,7 +250,7 @@ See in the snippet below how we repeat the `<tr>` rows for every item and use it
     ...
 ```
 
-As you may have noticed, we are using plain html tags instead of MJML ones. That's because you can't nest `<mj-column>` as certain email clients don't support it. When you have to create complex design, the best way is then to stick to the classic `<table>` children tags ( `<tr>`, `<td>`, `<th>`, etc.) wrapped in a [`<mj-table>`](https://mjml.io/documentation/#mjml-table) component.
+As you may have noticed, we are using plain html tags instead of MJML ones. That's because you can't nest `<mj-column>` as certain email clients don't support it. When you have to create complex design, the best way is then to stick to the classic `<table>` children tags ( `<tr>`, `<td>`, `<th>`, etc.) wrapped in a [`<mj-table>`](https://mjml.io/documentation/?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial#mjml-table) component.
 
 <br />
 
@@ -264,7 +264,7 @@ As you may have noticed, we are using plain html tags instead of MJML ones. That
 
 #### How much is it?
 
-Here again, we use a [`<mj-table>`](https://mjml.io/documentation/#mjml-table) to display two subcolumns. One is left-aligned and contains the `SUBTOTAL:` title, the other is right-aligned and displays the currency and the amount using two templating language [variables](http://dev.mailjet.com/template-language/reference/?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial#transactional-templating#variables).
+Here again, we use a [`<mj-table>`](https://mjml.io/documentation/?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial#mjml-table) to display two subcolumns. One is left-aligned and contains the `SUBTOTAL:` title, the other is right-aligned and displays the currency and the amount using two templating language [variables](http://dev.mailjet.com/template-language/reference/?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial#variables).
 
 ```XML
 <!-- Subtotal -->
@@ -279,7 +279,7 @@ Here again, we use a [`<mj-table>`](https://mjml.io/documentation/#mjml-table) t
 
 #### Click, click, click.
 
-Last but not list, we display our two CTAs using two [`<mj-button>`](https://mjml.io/documentation/#mjml-button).
+Last but not list, we display our two CTAs using two [`<mj-button>`](https://mjml.io/documentation/?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial#mjml-button).
 
 ```XML
 <!-- CTAs -->
