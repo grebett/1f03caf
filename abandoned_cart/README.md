@@ -92,15 +92,23 @@ The second [`<mj-column>`](https://mjml.io/documentation/?utm_source=referrer&ut
 <!-- Navigation bar-->
 <mj-navbar background-color="#ffffff">
   <mj-column width="80px" vertical-align="middle">
-    <mj-image width="40px" src="http://bit.ly/mj-tpl-tuto-logo-small" padding="10px"></mj-image>
+    <mj-image width="40px" src="https://s27.postimg.org/u09gkrbcz/logo_small.png" padding="10px"></mj-image>
   </mj-column>
   <mj-column width="520px" vertical-align="middle">
-    <mj-inline-links base-url="#" align="left">
-      <mj-link href="/jackets" mj-class="nav-link" padding-right="25px" font-size="16">JACKETS</mj-link>
-      <mj-link href="/pants" mj-class="nav-link" padding-right="25px" font-size="16">PANTS</mj-link>
-      <mj-link href="/jumper" mj-class="nav-link" padding-right="25px" font-size="16">JUMPER</mj-link>
-      <mj-link href="/shirts" mj-class="nav-link" padding-right="25px" font-size="16">SHIRTS</mj-link>
-      <mj-link href="/shoes" mj-class="nav-link" padding-right="25px" font-size="16">SHOES</mj-link>
+    <mj-inline-links
+      hamburger="hamburger"
+      base-url="#"
+      align="center"
+      ico-left="30px"
+      ico-align="center"
+      ico-font-size="40px"
+      ico-color="#763b26"
+      ico-padding-bottom="20px">
+        <mj-link href="/jackets" mj-class="nav-link">JACKETS</mj-link>
+        <mj-link href="/pants" mj-class="nav-link">PANTS</mj-link>
+        <mj-link href="/jumper" mj-class="nav-link">JUMPER</mj-link>
+        <mj-link href="/shirts" mj-class="nav-link">SHIRTS</mj-link>
+        <mj-link href="/shoes" mj-class="nav-link">SHOES</mj-link>
     </mj-inline-links>
   </mj-column>
 </mj-navbar>

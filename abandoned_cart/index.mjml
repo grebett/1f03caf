@@ -1,15 +1,14 @@
 <mjml>
   <mj-head>
     <mj-attributes>
-      <mj-all padding="0" />
-      <mj-text font-size="13" color="#333333" font-family="Roboto, Helvetica, Arial, sans-serif" />
-      <mj-button border-radius="0" font-family="Roboto, Helvetica, Arial, sans-serif" text-transform="uppercase" font-size="18px" width="237px" height="49px" inner-padding="0px"/>
-      <mj-table font-family="Roboto, Helvetica, Arial, sans-serif" />
+      <mj-all padding="0" font-family="Roboto, Helvetica, Arial, sans-serif" />
+      <mj-text font-size="13" color="#333333"/>
+      <mj-button border-radius="0" text-transform="uppercase" font-size="18px" width="237px" height="49px" inner-padding="0px"/>
       <mj-class name="img-bordered" border="2px solid #eeeeee" border-radius="0"/>
       <mj-class name="divider-simple" border-width="1px" border-style="solid" border-color="#763b26" padding-top="15px" padding="0 150px 10px 150px"/>
       <mj-class name="divider-large" border-width="3px" border-style="solid" border-color="#eeeeee" padding-top="40px" padding-bottom="20px"/>
       <mj-class name="section-white" background-color="#ffffff" />
-      <mj-class name="nav-link" color="#763b26" font-family="Roboto, Helvetica, Arial, sans-serif" padding-right="25px" font-size="16px" />
+      <mj-class name="nav-link" color="#763b26" padding="12px" font-size="16px" />
     </mj-attributes>
     <mj-style>
       html, body { background-color: lightgrey; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
@@ -28,8 +27,16 @@
           <mj-image width="40px" src="https://s27.postimg.org/u09gkrbcz/logo_small.png" padding="10px"></mj-image>
         </mj-column>
         <mj-column width="520px" vertical-align="middle">
-          <mj-inline-links base-url="#" align="left">
-            <mj-link href="/jackets" mj-class="nav-link">JACKETS</mj-link>
+          <mj-inline-links
+            hamburger="hamburger"
+            base-url="#"
+            align="center"
+            ico-left="30px"
+            ico-align="center"
+            ico-font-size="40px"
+            ico-color="#763b26"
+            ico-padding-bottom="20px">
+              <mj-link href="/jackets" mj-class="nav-link">JACKETS</mj-link>
               <mj-link href="/pants" mj-class="nav-link">PANTS</mj-link>
               <mj-link href="/jumper" mj-class="nav-link">JUMPER</mj-link>
               <mj-link href="/shirts" mj-class="nav-link">SHIRTS</mj-link>
