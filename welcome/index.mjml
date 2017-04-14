@@ -48,7 +48,6 @@
             hamburger="hamburger"
             base-url="#"
             align="center"
-            ico-left="30px"
             ico-align="center"
             ico-font-size="40px"
             ico-color="#763b26"

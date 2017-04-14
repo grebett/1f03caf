@@ -309,7 +309,7 @@ Last but not list, we display our two CTAs using two [`<mj-button>`](https://mjm
 
 ### You will love that
 
-We've already covered that part in our previous tutorials. Want to discover how to implement this section? Go [this way](../receipt/#you-will-love-that).
+We've already covered that part in our previous tutorials. Want to discover how to implement this section? Go [this way](../receipt/#i-bet-you-want-to-buy-more-things).
 
 
 ### The social network
