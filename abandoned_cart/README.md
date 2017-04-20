@@ -1,3 +1,5 @@
+_Welcome to our templating language and MJML tutorials series. You can find all the tutorials [here](../README.md#lets-start-)_.
+
 # How to create an abandoned cart email template
 
 When a customer adds products to their cart but fails to check out, it doesn’t mean the sale is definitively over. Indeed, sending an email is a remarkably effective tactic to reduce your churn rate. Here are some numbers for you: 50% of abandoned cart emails are opened, and more than a third of them trigger clicks to redirect customers to the website.
